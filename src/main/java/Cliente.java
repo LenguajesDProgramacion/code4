@@ -1,6 +1,12 @@
 public abstract class Cliente {
 
-    String nombre;
+    private String nombre;
+    private int claveCliente;
 
-    public abstract void totalPagar();
+    public Cliente(String nombre, int claveCliente){
+        this.nombre = nombre;
+        this.claveCliente = claveCliente;
+    }
+
+    public abstract double totalPagar();
 }

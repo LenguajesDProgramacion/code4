@@ -1,6 +1,14 @@
 public class GrupoB extends Cliente {
 
-    public void totalPagar(){
-        System.out.println("Tiene un descuento del 5%");
+    private double montoPagar;
+
+    public GrupoB(String nombre, int claveCliente, double montoPagar){
+        super(nombre, claveCliente);
+        this.montoPagar = montoPagar;
+    }
+
+    public double totalPagar(){
+
+        return (montoPagar >= 10000 ? montoPagar*0.95 : montoPagar); //condicion ternaria
     }
 }
