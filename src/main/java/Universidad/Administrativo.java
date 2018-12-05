@@ -16,7 +16,7 @@ public class Administrativo extends Persona {
         super(nombre, apPat, apMat, ci, edad, cargo);
     }
 
-    public void asignarMateriaDoc(List<Docente> docenteList, List<Materia> materiaList){
+   /* public void asignarMateriaDoc(List<Docente> docenteList, List<Materia> materiaList){
 
         try {
             for (Docente docente: docenteList) {
@@ -40,5 +40,5 @@ public class Administrativo extends Persona {
         }catch (Exception e){
             System.out.println("");
         }
-    }
+    }*/
 }
